@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'update', '-g', 'bower' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose request where is /bower
+5 verbose request registry https://registry.npmjs.org/
+6 verbose request id 2e02cecdb1cf5e08
+7 verbose url raw /bower
+8 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+9 verbose url resolved https://registry.npmjs.org/bower
+10 verbose request where is https://registry.npmjs.org/bower
+11 info trying registry request attempt 1 at 11:41:52
+12 verbose etag "3EV17WQ5U55R0ZC1W85RLKNH8"
+13 http GET https://registry.npmjs.org/bower
+14 http 200 https://registry.npmjs.org/bower
+15 silly registry.get cb [ 200,
+15 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+15 silly registry.get     etag: '"48KE6QM39XCQTEJIB2WDR02LX"',
+15 silly registry.get     'content-type': 'application/json',
+15 silly registry.get     'cache-control': 'max-age=60',
+15 silly registry.get     'content-length': '112051',
+15 silly registry.get     'accept-ranges': 'bytes',
+15 silly registry.get     date: 'Mon, 18 May 2015 17:41:54 GMT',
+15 silly registry.get     via: '1.1 varnish',
+15 silly registry.get     age: '49',
+15 silly registry.get     connection: 'keep-alive',
+15 silly registry.get     'x-served-by': 'cache-lax1432-LAX',
+15 silly registry.get     'x-cache': 'HIT',
+15 silly registry.get     'x-cache-hits': '2',
+15 silly registry.get     'x-timer': 'S1431970914.937457,VS0,VE0',
+15 silly registry.get     vary: 'Accept' } ]
+16 verbose request where is /bower
+17 verbose request registry https://registry.npmjs.org/
+18 verbose url raw /bower
+19 verbose url resolving [ 'https://registry.npmjs.org/', './bower' ]
+20 verbose url resolved https://registry.npmjs.org/bower
+21 verbose request where is https://registry.npmjs.org/bower
+22 info trying registry request attempt 1 at 11:42:02
+23 verbose etag "48KE6QM39XCQTEJIB2WDR02LX"
+24 http GET https://registry.npmjs.org/bower
+25 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+26 info trying registry request attempt 2 at 11:42:12
+27 verbose etag "48KE6QM39XCQTEJIB2WDR02LX"
+28 http GET https://registry.npmjs.org/bower
+29 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+30 info trying registry request attempt 3 at 11:43:13
+31 verbose etag "48KE6QM39XCQTEJIB2WDR02LX"
+32 http GET https://registry.npmjs.org/bower
+33 http 304 https://registry.npmjs.org/bower
+34 silly registry.get cb [ 304,
+34 silly registry.get   { date: 'Mon, 18 May 2015 17:43:17 GMT',
+34 silly registry.get     via: '1.1 varnish',
+34 silly registry.get     'cache-control': 'max-age=60',
+34 silly registry.get     etag: '"48KE6QM39XCQTEJIB2WDR02LX"',
+34 silly registry.get     age: '4',
+34 silly registry.get     connection: 'keep-alive',
+34 silly registry.get     'x-served-by': 'cache-lax1428-LAX',
+34 silly registry.get     'x-cache': 'HIT',
+34 silly registry.get     'x-cache-hits': '136',
+34 silly registry.get     'x-timer': 'S1431970997.188906,VS0,VE0',
+34 silly registry.get     vary: 'Accept' } ]
+35 verbose etag https://registry.npmjs.org/bower from cache
+36 info outdated updating [ [ '/usr/local/lib', 'bower', '1.3.12', '1.4.1', '1.4.1', 'latest' ],
+36 info outdated   [ '/usr/local/lib/node_modules/steroids',
+36 info outdated     'bower',
+36 info outdated     '1.3.8',
+36 info outdated     '1.3.8',
+36 info outdated     '1.4.1',
+36 info outdated     '1.3.8' ] ]
+37 error Failed to parse json
+37 error Unexpected end of input
+38 error File: /usr/local/lib/node_modules/runt/node_modules/pistachio/package.json
+39 error Failed to parse package.json data.
+39 error package.json must be actual JSON, not just JavaScript.
+39 error
+39 error This is not a bug in npm.
+39 error Tell the package author to fix their package.json file. JSON.parse
+40 error System Darwin 14.3.0
+41 error command "node" "/usr/local/bin/npm" "update" "-g" "bower"
+42 error cwd /Users/amy-kate/AKCode/react-test
+43 error node -v v0.10.32
+44 error npm -v 1.4.28
+45 error file /usr/local/lib/node_modules/runt/node_modules/pistachio/package.json
+46 error code EJSONPARSE
+47 verbose exit [ 1, true ]
